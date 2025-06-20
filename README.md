@@ -32,14 +32,7 @@ This assignment focuses on demonstrating **Unreal Engine C++ proficiency** in ar
 
 ---
 
-## Challenges Faced
-
-The primary challenge I encountered during development was related to fetching and parsing the online JSON data which I was not familiar with before.
-
-The trickiest part was making sense of the online data once I downloaded it. Even though I managed to get the data from the internet, understanding how to read all the specific details inside that data file and use them in my C++ code was quite a challenge. It took a lot of effort to grasp the C++ concepts needed to properly read that information and make the game react to it.
----
-
-## How to Test the Feature
+## How to Play
 
 1.  **Clone the Repository:**
     ```bash
@@ -62,7 +55,7 @@ The trickiest part was making sense of the online data once I downloaded it. Eve
 
 A video showcasing the game's features, including box spawning, interactive shooting, and real-time score updates, is available here:
 
-[**[https://youtu.be/V3HwPsa72NY]**]
+[Box Shooter](https://youtu.be/V3HwPsa72NY)
 ---
 
 
