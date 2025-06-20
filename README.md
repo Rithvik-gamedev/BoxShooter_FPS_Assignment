@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project is a first-person shooter (FPS) game developed in **Unreal Engine 5.X**. The core gameplay revolves around dynamically spawning interactive boxes based on real-time data fetched from an online JSON endpoint. Players engage by shooting and damaging these boxes, earning points upon destruction, which are displayed on a custom in-game UI.
+This project is a first-person shooter (FPS) game developed in **Unreal Engine 5.6**. The gameplay revolves around dynamically spawning interactive boxes based on real-time data fetched from an online JSON endpoint. Players engage by shooting and damaging these boxes, earning points upon destruction, which are displayed on a custom in-game UI.
 
 This assignment focuses on demonstrating **Unreal Engine C++ proficiency** in areas such as online data fetching, JSON parsing, dynamic actor spawning, custom material application, hit detection, and UMG UI integration.
 
@@ -34,29 +34,35 @@ This assignment focuses on demonstrating **Unreal Engine C++ proficiency** in ar
 
 ## Challenges Faced
 
-The primary challenge encountered during development was related to **fetching and parsing the online JSON data**:
+The primary challenge I encountered during development was related to fetching and parsing the online JSON data which I was not familiar with before.
 
-* **Asynchronous HTTP Operations:** Handling the asynchronous nature of web requests required careful implementation of delegates to ensure that data was processed only after a successful response, avoiding race conditions or null data access.
-
-* **Robust JSON Parsing:** Ensuring the parsing logic could gracefully handle variations or potential malformations in the JSON structure (e.g., missing fields, incorrect data types) was crucial for stability. This was addressed by consistently using `TryGet...` methods provided by `FJsonObject` and `FJsonValue` and implementing appropriate error logging. This ensured the application wouldn't crash if the external data source was not perfectly structured.
-
+The trickiest part was making sense of the online data once I downloaded it. Even though I managed to get the data from the internet, understanding how to read all the specific details inside that data file and use them in my C++ code was quite a challenge. It took a lot of effort to grasp the C++ concepts needed to properly read that information and make the game react to it.
 ---
 
-## 🎮 How to Test the Feature
+## How to Test the Feature
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/YourGitHubUsername/BoxShooter.git](https://github.com/YourGitHubUsername/BoxShooter.git)
+    git clone https://github.com/Rithvik-gamedev/BoxShooter_FPS_Assignment.git
     ```
 2.  **Navigate to Project Directory:**
     ```bash
-    cd BoxShooter
+    cd BoxShooter_FPS_Assignment
     ```
 3.  **Generate Project Files:**
-    * Right-click on `BoxShooter.uproject` and select "Generate Visual Studio project files".
+    * Right-click on `FPS_Assignment.uproject` and select "Generate Visual Studio project files".
 4.  **Open & Build in Unreal Engine:**
-    * Open `BoxShooter.uproject` directly, or open the generated `BoxShooter.sln` (or equivalent) in your IDE, then build the "Development Editor" configuration.
+    * Open `FPS_Assignment.uproject` directly, or open the generated `FPS_Assignment.sln` in your IDE, then build the "Development Editor" configuration.
 5.  **Run the Game:**
     * In the Unreal Editor, press the **"Play"** button to start the game in the viewport.
+
+---
+
+## Demonstration Video
+
+A video showcasing the game's features, including box spawning, interactive shooting, and real-time score updates, is available here:
+
+[**[https://youtu.be/V3HwPsa72NY]**]
+---
 
 
